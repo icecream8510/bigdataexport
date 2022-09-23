@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+  <!-- ========== Data Sources Definitions =================================== -->
+
+  <!-- ========== Form Bean Definitions =================================== -->
+  <form-beans>
+ 
+    
+
+  </form-beans>
+
+  <!-- ========== Global Exceptions Definitions =================================== -->
+
+  <!-- ========== Global Forward Definitions =================================== -->
+
+  <!-- ========== Action Mapping Definitions =================================== -->
+   <action-mappings>
+   	 <action
+      path="/exportExcelAction"
+      type="com.boco.framework.export.web.ExportExcelAction"
+      scope="request"
+      parameter="method"
+      unknown="false"
+      validate="true"
+    >
+     
+    </action>
+    
+
+  </action-mappings>
+
+<!--   <controller>
+	<set-property property="processorClass"
+		value="org.springframework.web.struts.DelegatingRequestProcessor" />
+</controller> -->
+
+ 
+
+</struts-config>
